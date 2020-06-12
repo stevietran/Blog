@@ -1,0 +1,51 @@
+# Project information
+site_name: Vu Tran
+site_description: Personal Website
+site_author: Tran Le Vu
+site_url: https://squidfunk.github.io/mkdocs-material/
+
+# Repository
+repo_name: squidfunk/mkdocs-material
+repo_url: https://github.com/squidfunk/mkdocs-material
+
+# Copyright
+copyright: Copyright &copy; 2016 - 2020 Martin Donath
+
+# Configuration
+theme:
+  features:
+    - instant
+    - tabs
+  name: material
+  language: en
+  palette:
+    primary: indigo
+    accent: indigo
+  font:
+    text: Roboto
+    code: Roboto Mono
+
+# Extras
+extra:
+  social:
+    - icon: fontawesome/brands/github-alt
+      link: https://github.com/squidfunk
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/squidfunk
+    - icon: fontawesome/brands/linkedin
+      link: https://linkedin.com/in/squidfunk
+
+  # web app manifest
+  manifest: manifest.webmanifest
+# Google Analytics
+google_analytics:
+  - UA-XXXXXXXX-X
+  - auto
+
+# Extensions
+markdown_extensions:
+  - admonition
+  - codehilite:
+      guess_lang: false
+  - toc:
+      permalink: true
