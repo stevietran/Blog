@@ -5,22 +5,23 @@ site_author: Tran Le Vu
 site_url: https://squidfunk.github.io/mkdocs-material/
 
 # Repository
-repo_name: squidfunk/mkdocs-material
-repo_url: https://github.com/squidfunk/mkdocs-material
+repo_name: stevietran/Blog
+repo_url: https://github.com/stevietran/Blog.git
 
 # Copyright
-copyright: Copyright &copy; 2016 - 2020 Martin Donath
+copyright: Copyright &copy; 2020 - 2020 Vu Tran
 
 # Configuration
 theme:
+  name: material
+  nav_style: dark
   features:
     - instant
     - tabs
-  name: material
   language: en
   palette:
-    primary: indigo
-    accent: indigo
+    primary: deep orange
+    accent: deep orange
   font:
     text: Roboto
     code: Roboto Mono
@@ -29,14 +30,13 @@ theme:
 extra:
   social:
     - icon: fontawesome/brands/github-alt
-      link: https://github.com/squidfunk
+      link: https://github.com/stevietran
     - icon: fontawesome/brands/twitter
-      link: https://twitter.com/squidfunk
     - icon: fontawesome/brands/linkedin
-      link: https://linkedin.com/in/squidfunk
 
   # web app manifest
   manifest: manifest.webmanifest
+
 # Google Analytics
 google_analytics:
   - UA-XXXXXXXX-X
@@ -44,8 +44,47 @@ google_analytics:
 
 # Extensions
 markdown_extensions:
+  # extension for block-style side contents such as summaries, notes, hints or warnings
+  # https://github.com/squidfunk/mkdocs-material/blob/master/docs/extensions/admonition.md
   - admonition
+
+  # adds syntax highlighting to code blocks
+  # https://github.com/squidfunk/mkdocs-material/blob/master/docs/extensions/codehilite.md
   - codehilite:
       guess_lang: false
   - toc:
       permalink: true
+  - pymdownx.arithmatex
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.inlinehilite
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tabbed
+  - pymdownx.tilde
+
+#nav:
+#    - Home: 'index.md'
+#    - About: 'about.md'
+#    - Guide: 'README.md'
+
+    # Blog session
+    # - Blogs:
+        # Page: Confluence
+        # - Confluence: 'Blogs/misc/confluence.md'
+
+plugins:
+  - search
+  - awesome-pages
+  - git-revision-date-localized:
+      type: date

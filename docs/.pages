@@ -1,0 +1,6 @@
+title: Home
+arrange:
+  - index.md
+  - about.md
+  - Blogs
+collapse: true

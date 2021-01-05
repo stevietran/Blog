@@ -1,0 +1,4 @@
+mkdocs-material==5.2.3
+mkdocs-git-revision-date-localized-plugin==0.5.2
+mkdocs-awesome-pages-plugin==2.2.1
+
