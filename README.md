@@ -10,6 +10,7 @@ Program written in Python 3 using mkdocs-material Python package for building a 
 
 ## HOW TO INSTALL:
 ### Requirements:
+* python 3.7
 * See requirement.txt file
 
 ### How to install and run application:
